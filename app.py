@@ -59,7 +59,7 @@ def getDBData(state, category, city):
     conn, cursor = connect()
     # tablename = 'business_'+state
     # sql = """SELECT * from vancouver_pizza """
-    sql = """SELECT * from  vancouver_pizza"""
+    sql = """SELECT * from vancouver_pizza"""
     data.business_review_df = pd.read_sql(sql, con=conn)
     print("Data retrieved")
     conn.close()
